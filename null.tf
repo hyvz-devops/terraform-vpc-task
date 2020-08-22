@@ -33,8 +33,6 @@ resource "null_resource"  "commands1" {
         # "sudo chown -R apache:apache /var/www/html",
         # "sudo sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config",
         # "sudo setenforce 0"
-       
-
         ]
     }
 }
