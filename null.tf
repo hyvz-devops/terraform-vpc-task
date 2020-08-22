@@ -1,5 +1,5 @@
 resource "null_resource"  "commands1" {
-    depends_on = ["aws_instance.vpc_task_db"]
+    depends_on = ["aws_instance.vpc_task"]
     triggers = {
         always_run = "${timestamp()}"
     }
