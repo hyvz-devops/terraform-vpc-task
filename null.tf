@@ -14,7 +14,8 @@ resource "null_resource"  "commands1" {
     inline = [
         "sudo yum install mariadb-server mariadb -y", 
         "sudo systemctl start mariadb", 
-        "sudo systemctl enable  mariadb", 
+        "sudo systemctl enable  mariadb",
+        ]
        
         # "sudo yum install httpd -y",
         # "sudo systemctl start httpd && sudo systemctl enable httpd",
@@ -33,6 +34,4 @@ resource "null_resource"  "commands1" {
         # "sudo chown -R apache:apache /var/www/html",
         # "sudo sed -i 's/SELINUX=enforcing/SELINUX=disabled/g' /etc/selinux/config",
         # "sudo setenforce 0"
-        ]
-    }
-}
+
